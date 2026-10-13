@@ -9,10 +9,14 @@
 <meta property="og:description" content="Landing page představí AI recepční jako pomocníka pro každodenní komunikaci s hosty penzionů na jižní Moravě. Úvod bude vzdušnější: krátký výrazný nadpis, stručné vysvětlení služby a tlačítko ke kontaktnímu formuláři doplní decentní ilustrační ukázka konverzace, nikoli živý chatbot. Přehled přínosů" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="cs" />
-<meta name="twitter:card" content="summary" />
+<meta property="og:url" content="https://ai-recepcni-pro-penziony-na-jizni-morave.jeanai-site.cz" />
+<meta property="og:image" content="https://ai-recepcni-pro-penziony-na-jizni-morave.jeanai-site.cz/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="AI recepční pro penziony na jižní Moravě" />
 <meta name="twitter:description" content="Landing page představí AI recepční jako pomocníka pro každodenní komunikaci s hosty penzionů na jižní Moravě. Úvod bude vzdušnější: krátký výrazný nadpis, stručné vysvětlení služby a tlačítko ke kontaktnímu formuláři doplní decentní ilustrační ukázka konverzace, nikoli živý chatbot. Přehled přínosů" />
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"AI recepční pro penziony na jižní Moravě"}]}</script>
+<meta name="twitter:image" content="https://ai-recepcni-pro-penziony-na-jizni-morave.jeanai-site.cz/og-image.jpg" />
+<link rel="canonical" href="https://ai-recepcni-pro-penziony-na-jizni-morave.jeanai-site.cz" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"AI recepční pro penziony na jižní Moravě","url":"https://ai-recepcni-pro-penziony-na-jizni-morave.jeanai-site.cz"}]}</script>
 <style>
 @font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;src:url("/fonts/manrope-latin-ext-var.woff2") format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
 @font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;src:url("/fonts/manrope-latin-var.woff2") format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
@@ -56,7 +60,7 @@ a[data-jean-deadlink] { cursor: default; }
 }
 
 html {
-  scroll-x-x-x-x-behavior: smooth;
+  scroll-x-x-x-x-x-behavior: smooth;
   scroll-padding-top: 24px;
 }
 
@@ -669,18 +673,14 @@ h1 span {
   max-width: 320px;
 }
 
-.about-monogram {
-  display: grid;
-  place-items: center;
+.about-photo {
+  display: block;
+  width: 100%;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--surface);
-  color: var(--muted);
-  font-family: "Manrope", sans-serif;
-  font-size: clamp(64px, 10vw, 100px);
-  font-weight: 600;
-  letter-spacing: -4px;
 }
 
 .about-portrait figcaption {
@@ -1058,7 +1058,7 @@ h1 span {
 
 @media (prefers-reduced-motion: reduce) {
   html {
-    scroll-x-x-x-x-behavior: auto;
+    scroll-x-x-x-x-x-behavior: auto;
   }
 
   .button,
@@ -1248,7 +1248,7 @@ h1 span {
     <section class="section about" id="o-mne">
       <div class="container about-grid">
         <figure class="about-portrait">
-          <div class="about-monogram" aria-hidden="true">LK</div>
+          <img class="about-photo" alt="Dočasná fotografie krajiny — místo pro vlastní portrét" data-jean-slot="about.image" loading="lazy" src="/images/slot-1.png">
           <figcaption data-jean-slot="about.caption">Lukáš Klimeš · AI expert a nadšenec</figcaption>
         </figure>
         <div class="about-copy">
