@@ -61,7 +61,7 @@ a[data-jean-deadlink] { cursor: default; }
 }
 
 html {
-  scroll-x-x-x-x-x-x-behavior: smooth;
+  scroll-x-x-x-x-x-x-x-x-behavior: smooth;
   scroll-padding-top: 24px;
 }
 
@@ -1190,7 +1190,7 @@ h1 span {
 
 @media (prefers-reduced-motion: reduce) {
   html {
-    scroll-x-x-x-x-x-x-behavior: auto;
+    scroll-x-x-x-x-x-x-x-x-behavior: auto;
   }
 
   .button,
@@ -1506,19 +1506,19 @@ h1 span {
               <label for="contact-message" data-jean-slot="contact.message_label">O vašem penzionu <span aria-hidden="true" data-jean-slot="auto.15">*</span></label>
               <textarea id="contact-message" name="message" rows="6" placeholder="Kde je váš penzion a s jakými dotazy hostů byste chtěli pomoci?" required></textarea>
             </div>
-            <p class="form-note" id="form-availability" data-jean-slot="contact.availability">Odesílání formuláře zatím není aktivní.</p>
+
             <div data-jean-slot="turnstile"></div>
             <p class="form-status" data-jean-slot="status" role="status" aria-live="polite"></p>
             <div class="form-bottom">
               <p class="form-note" data-jean-slot="contact.required_note">* Povinná pole</p>
-              <button class="button" type="submit" aria-describedby="form-availability">
+              <button class="button" type="submit">
                 <span data-jean-slot="contact.submit">Odeslat poptávku</span><span aria-hidden="true" data-jean-slot="auto.16">↗</span>
               </button>
             </div>
           </form>
           <div class="form-success" data-jean-slot="success" role="status">
             <h3 data-jean-slot="contact.success_heading">Děkujeme za představení vašeho penzionu.</h3>
-            <p data-jean-slot="contact.success_text">Poptávka byla odeslána. Ozveme se na uvedený e-mail a probereme, kde vám může AI recepční pomoci.</p>
+            <p data-jean-slot="contact.success_text">Ozveme se vám na uvedený e-mail.</p>
           </div>
         </div>
       </div>
@@ -1554,7 +1554,7 @@ h1 span {
 <script>
 (function () {
   "use strict";
-  var CFG = {"apiUrl":"https://jeanai.onrender.com","siteId":"71171755-cf11-4977-a074-dacb6a86b118","forms":{"contact_form":"0dc5ff91-5ee6-482d-ab5b-570acc2bbb92","waitlist":null,"newsletter_signup":false,"reservation":null,"suggestions":false},"widgets":[],"dualMounts":["suggestions"],"slotMinutes":60,"resourceTimezone":"","turnstile":null,"preview":false,"copy":{"submitting":"Odesílám…","success":"Děkujeme! Ozveme se co nejdřív.","successReservation":"Rezervace přijata. Potvrzení jsme poslali na e-mail.","errorDateRequired":"Vyberte prosím datum a čas.","errorFullyBooked":"Tenhle termín je bohužel obsazený. Zkuste jiný.","successNewsletter":"Hotovo — odběr potvrzen.","successSuggestion":"Děkujeme! Podnět jsme přijali. Na webu se objeví, až ho schválí správce.","alreadySubscribed":"Tuhle adresu už v seznamu máme.","successWaitlist":"Přidáni na čekací listinu! Dáme Vám vědět, jakmile se uvolní místo.","errorEmailRequired":"Vyplňte prosím e-mail.","errorEmailInvalid":"Zkontrolujte prosím tvar e-mailu.","errorRequired":"Vyplňte prosím všechna pole.","errorGeneric":"Odeslání se nepodařilo. Zkuste to prosím znovu.","errorNetwork":"Nepodařilo se spojit se serverem. Zkuste to prosím znovu.","errorTurnstile":"Prosím dokončete bezpečnostní ověření.","previewNotice":"Náhled: na živém webu se formulář opravdu odešle.","agree":{"label":"Souhlasím","pressedMark":"✓ ","note":"Počet souhlasů je orientační.","similarOne":"Podobný podnět už tu je — souhlasíte s ním?","similarMany":"Podobné podněty už tu jsou — souhlasíte s některým?","preview":"Náhled: na živém webu se souhlas započítá.","challengeUnavailable":"Bezpečnostní ověření se nepodařilo načíst. Zkontrolujte připojení nebo blokování obsahu a zkuste to znovu."},"reply":{"open":"Odpovědět","textLabel":"Vaše odpověď","nameLabel":"Jméno (nepovinné)","submit":"Odeslat odpověď","moderation":"Odpověď se na webu objeví, až ji schválí správce.","success":"Děkujeme! Odpověď jsme přijali. Na webu se objeví, až ji schválí správce.","anonymous":"Návštěvník","more":"Další odpovědi","preview":"Náhled: na živém webu se odpověď opravdu odešle.","maxText":400,"maxName":60},"errorsByCode":{"runtime_inactive":"Interaktivní funkce tohoto webu jsou dočasně pozastavené.","function_switched_off":"Tato funkce je teď na webu vypnutá.","site_owner_deleted":"Interaktivní funkce tohoto webu už nejsou k dispozici.","service_unavailable":"Služba je dočasně nedostupná. Zkuste to prosím za chvíli.","newsletter_unavailable":"Přihlášení k odběru je dočasně nedostupné. Zkuste to prosím později.","reservations_unavailable":"Rezervace jsou dočasně nedostupné. Zkuste to prosím později.","waitlist_unavailable":"Pořadník je dočasně nedostupný. Zkuste to prosím později.","rate_limited":"Zkoušíte to příliš často. Počkejte prosím chvíli a zkuste to znovu.","form_daily_limit":"Formulář dnes přijal maximální počet zpráv. Zkuste to prosím zítra.","daily_limit":"Web dnes přijal maximum podnětů. Zkuste to prosím zítra.","too_many_files":"K podnětu patří jedna fotka.","site_files_full":"Web teď nemůže přijmout další fotku. Zkuste to prosím později.","photo_too_large":"Fotka je příliš velká. Zkuste prosím menší, do 5 MB.","photo_unreadable":"Fotku se nepodařilo přečíst. Pošlete prosím JPEG, PNG nebo WebP.","photo_empty":"Fotka je prázdná. Vyberte prosím soubor znovu.","photo_busy":"Fotku teď nestíháme zpracovat. Zkuste to prosím za chvíli.","title_required":"Doplňte prosím krátký nadpis.","text_required":"Napište prosím, o co jde.","text_too_long":"Podnět je moc dlouhý — zkraťte ho prosím, počítadlo pod polem ukazuje, kolik místa zbývá.","invalid_photo":"Fotku se nepodařilo přiřadit. Zkuste ji prosím vybrat znovu.","vote_entry_limit":"Z vašeho připojení už s tímto podnětem souhlasilo víc lidí. Další souhlas teď přidat nejde.","vote_daily_limit":"Dnes jste souhlasili s mnoha podněty. Zkuste to prosím zítra.","voter_required":"Souhlas se nepodařilo započítat. Načtěte prosím stránku znovu.","reply_voter_required":"Odpověď se nepodařilo odeslat. Načtěte prosím stránku znovu.","reply_to_reply":"Odpovědět jde jen na podnět, ne na jinou odpověď.","reply_entry_limit":"K tomuto podnětu už z vašeho připojení přišlo víc odpovědí. Další teď poslat nejde.","reply_daily_limit":"Dnes jste poslali mnoho odpovědí. Zkuste to prosím zítra.","reply_takes_no_photo":"K odpovědi nejde přiložit fotku — fotka patří k podnětu.","invalid_parent":"Odpověď se nepodařilo přiřadit k podnětu. Načtěte prosím stránku znovu.","slot_unavailable":"Zvolený termín je plně obsazen. Vyberte prosím jiný termín.","outside_schedule":"Zvolený čas je mimo otevírací dobu. Vyberte prosím jiný termín.","blackout_period":"V tomto období nepřijímáme rezervace. Vyberte prosím jiný termín.","resource_not_bookable":"Tato položka právě nepřijímá rezervace.","reservation_window_invalid":"Zvolený termín nelze rezervovat. Zkontrolujte prosím datum a čas.","email_required":"Vyplňte prosím e-mailovou adresu.","email_invalid":"Zadejte prosím platnou e-mailovou adresu.","turnstile_missing":"Nepodařilo se ověřit, že nejste robot. Načtěte prosím stránku znovu.","turnstile_failed":"Ověření se nezdařilo. Zkuste to prosím znovu.","not_found":"Tuto stránku se nepodařilo najít.","form_not_found":"Tento formulář už není dostupný.","suggestion_not_found":"Tento podnět už na webu není.","resource_not_found":"Tato položka už není dostupná.","reservation_not_found":"Rezervaci se nepodařilo najít. Zkontrolujte prosím odkaz z potvrzovacího e-mailu.","reservation_not_cancellable":"Tuto rezervaci už nelze zrušit. Ozvěte se nám prosím přímo.","confirmation_invalid":"Tento potvrzovací odkaz už neplatí.","confirmation_expired":"Platnost potvrzovacího odkazu vypršela. Přihlaste se prosím k odběru znovu.","submission_failed":"Zprávu se nepodařilo odeslat. Zkuste to prosím znovu.","spam_protection_unsupported":"Formulář je dočasně mimo provoz. Zkuste to prosím později.","site_not_found":"Tento web už není dostupný.","storage_unavailable":"Fotku se nepodařilo uložit. Zkuste to prosím znovu.","visitor_authored_collection":"Tento obsah může přidat jen návštěvník webu.","invalid_request":"Odeslaná data nejsou úplná. Zkontrolujte prosím formulář a zkuste to znovu."}}};
+  var CFG = {"apiUrl":"https://jeanai.onrender.com","siteId":"71171755-cf11-4977-a074-dacb6a86b118","forms":{"contact_form":"0dc5ff91-5ee6-482d-ab5b-570acc2bbb92","enquiry_form":null,"waitlist":null,"newsletter_signup":false,"reservation":null,"suggestions":false},"widgets":[],"dualMounts":["suggestions"],"slotMinutes":60,"resourceTimezone":"","turnstile":null,"preview":false,"copy":{"submitting":"Odesílám…","success":"Děkujeme! Ozveme se co nejdřív.","successReservation":"Rezervace přijata. Potvrzení jsme poslali na e-mail.","deposit":{"awaiting":"Rezervace přijata — potvrdí se, jakmile dorazí záloha. Pokyny k platbě jsme poslali i na e-mail.","title":"Zálohu pošlete převodem","scan":"Naskenujte QR kód v aplikaci své banky, nebo zadejte platbu ručně.","amount":"Částka","account":"Číslo účtu","iban":"IBAN","symbol":"Variabilní symbol","message":"Zpráva pro příjemce","due":"Nedorazí-li záloha do {due}, rezervace se zruší."},"errorDateRequired":"Vyberte prosím datum a čas.","errorFullyBooked":"Tenhle termín je bohužel obsazený. Zkuste jiný.","successNewsletter":"Hotovo — odběr potvrzen.","successEnquiry":"Poptávka odeslána! Děkujeme za Váš zájem. Ozveme se Vám co nejdříve.","successSuggestion":"Děkujeme! Podnět jsme přijali. Na webu se objeví, až ho schválí správce.","alreadySubscribed":"Tuhle adresu už v seznamu máme.","successWaitlist":"Přidáni na čekací listinu! Dáme Vám vědět, jakmile se uvolní místo.","errorEmailRequired":"Vyplňte prosím e-mail.","errorEmailInvalid":"Zkontrolujte prosím tvar e-mailu.","errorRequired":"Vyplňte prosím všechna pole.","errorGeneric":"Odeslání se nepodařilo. Zkuste to prosím znovu.","errorNetwork":"Nepodařilo se spojit se serverem. Zkuste to prosím znovu.","errorTurnstile":"Prosím dokončete bezpečnostní ověření.","previewNotice":"Náhled: na živém webu se formulář opravdu odešle.","agree":{"label":"Souhlasím","pressedMark":"✓ ","note":"Počet souhlasů je orientační.","similarOne":"Podobný podnět už tu je — souhlasíte s ním?","similarMany":"Podobné podněty už tu jsou — souhlasíte s některým?","preview":"Náhled: na živém webu se souhlas započítá.","challengeUnavailable":"Bezpečnostní ověření se nepodařilo načíst. Zkontrolujte připojení nebo blokování obsahu a zkuste to znovu."},"reply":{"open":"Odpovědět","textLabel":"Vaše odpověď","nameLabel":"Jméno (nepovinné)","submit":"Odeslat odpověď","moderation":"Odpověď se na webu objeví, až ji schválí správce.","success":"Děkujeme! Odpověď jsme přijali. Na webu se objeví, až ji schválí správce.","anonymous":"Návštěvník","more":"Další odpovědi","preview":"Náhled: na živém webu se odpověď opravdu odešle.","maxText":400,"maxName":60},"errorsByCode":{"runtime_inactive":"Interaktivní funkce tohoto webu jsou dočasně pozastavené.","function_switched_off":"Tato funkce je teď na webu vypnutá.","site_owner_deleted":"Interaktivní funkce tohoto webu už nejsou k dispozici.","service_unavailable":"Služba je dočasně nedostupná. Zkuste to prosím za chvíli.","newsletter_unavailable":"Přihlášení k odběru je dočasně nedostupné. Zkuste to prosím později.","reservations_unavailable":"Rezervace jsou dočasně nedostupné. Zkuste to prosím později.","waitlist_unavailable":"Pořadník je dočasně nedostupný. Zkuste to prosím později.","rate_limited":"Zkoušíte to příliš často. Počkejte prosím chvíli a zkuste to znovu.","form_daily_limit":"Formulář dnes přijal maximální počet zpráv. Zkuste to prosím zítra.","daily_limit":"Web dnes přijal maximum podnětů. Zkuste to prosím zítra.","too_many_files":"K podnětu patří jedna fotka.","site_files_full":"Web teď nemůže přijmout další fotku. Zkuste to prosím později.","photo_too_large":"Fotka je příliš velká. Zkuste prosím menší, do 5 MB.","photo_unreadable":"Fotku se nepodařilo přečíst. Pošlete prosím JPEG, PNG nebo WebP.","photo_empty":"Fotka je prázdná. Vyberte prosím soubor znovu.","photo_busy":"Fotku teď nestíháme zpracovat. Zkuste to prosím za chvíli.","title_required":"Doplňte prosím krátký nadpis.","text_required":"Napište prosím, o co jde.","text_too_long":"Podnět je moc dlouhý — zkraťte ho prosím, počítadlo pod polem ukazuje, kolik místa zbývá.","invalid_photo":"Fotku se nepodařilo přiřadit. Zkuste ji prosím vybrat znovu.","vote_entry_limit":"Z vašeho připojení už s tímto podnětem souhlasilo víc lidí. Další souhlas teď přidat nejde.","vote_daily_limit":"Dnes jste souhlasili s mnoha podněty. Zkuste to prosím zítra.","voter_required":"Souhlas se nepodařilo započítat. Načtěte prosím stránku znovu.","reply_voter_required":"Odpověď se nepodařilo odeslat. Načtěte prosím stránku znovu.","reply_to_reply":"Odpovědět jde jen na podnět, ne na jinou odpověď.","reply_entry_limit":"K tomuto podnětu už z vašeho připojení přišlo víc odpovědí. Další teď poslat nejde.","reply_daily_limit":"Dnes jste poslali mnoho odpovědí. Zkuste to prosím zítra.","reply_takes_no_photo":"K odpovědi nejde přiložit fotku — fotka patří k podnětu.","invalid_parent":"Odpověď se nepodařilo přiřadit k podnětu. Načtěte prosím stránku znovu.","slot_unavailable":"Zvolený termín je plně obsazen. Vyberte prosím jiný termín.","outside_schedule":"Zvolený čas je mimo otevírací dobu. Vyberte prosím jiný termín.","blackout_period":"V tomto období nepřijímáme rezervace. Vyberte prosím jiný termín.","resource_not_bookable":"Tato položka právě nepřijímá rezervace.","reservation_window_invalid":"Zvolený termín nelze rezervovat. Zkontrolujte prosím datum a čas.","email_required":"Vyplňte prosím e-mailovou adresu.","email_invalid":"Zadejte prosím platnou e-mailovou adresu.","turnstile_missing":"Nepodařilo se ověřit, že nejste robot. Načtěte prosím stránku znovu.","turnstile_failed":"Ověření se nezdařilo. Zkuste to prosím znovu.","not_found":"Tuto stránku se nepodařilo najít.","form_not_found":"Tento formulář už není dostupný.","suggestion_not_found":"Tento podnět už na webu není.","resource_not_found":"Tato položka už není dostupná.","reservation_not_found":"Rezervaci se nepodařilo najít. Zkontrolujte prosím odkaz z potvrzovacího e-mailu.","reservation_not_cancellable":"Tuto rezervaci už nelze zrušit. Ozvěte se nám prosím přímo.","confirmation_invalid":"Tento potvrzovací odkaz už neplatí.","confirmation_expired":"Platnost potvrzovacího odkazu vypršela. Přihlaste se prosím k odběru znovu.","submission_failed":"Zprávu se nepodařilo odeslat. Zkuste to prosím znovu.","spam_protection_unsupported":"Formulář je dočasně mimo provoz. Zkuste to prosím později.","site_not_found":"Tento web už není dostupný.","storage_unavailable":"Fotku se nepodařilo uložit. Zkuste to prosím znovu.","visitor_authored_collection":"Tento obsah může přidat jen návštěvník webu.","invalid_request":"Odeslaná data nejsou úplná. Zkontrolujte prosím formulář a zkuste to znovu."}}};
 
 function jeanTzOffsetMs(ts, timeZone) {
   // NOTE: no backticks and no dollar-brace anywhere inside these two function
@@ -1686,6 +1686,67 @@ function jeanZonedWallClockToUtc(local, timeZone) {
     if (form.style) form.style.display = "none";
   }
 
+  /**
+   * T85 RC-13 — a booking that waits for its deposit. The form is reset and
+   * the status line says it waits; below the form, the payment: the QR the API
+   * drew (our own encoder's SVG — inserted only when it is one) and the same in
+   * words, every value set as TEXT. Never the page's success panel: that says
+   * the booking is done, and it is not until the money comes.
+   */
+  function showDeposit(form, pay) {
+    form.reset();
+    say(form, CFG.copy.deposit.awaiting, "success");
+    var copy = CFG.copy.deposit;
+    var box = document.createElement("div");
+    box.setAttribute("data-jean-deposit", "");
+    box.setAttribute("role", "region");
+    box.setAttribute("aria-label", copy.title);
+    box.style.cssText = "margin:1rem 0 0;padding:1rem;border:1px solid currentColor;border-radius:.5rem";
+    var title = document.createElement("p");
+    title.style.cssText = "margin:0 0 .25rem;font-weight:600";
+    title.textContent = copy.title;
+    box.appendChild(title);
+    var scan = document.createElement("p");
+    scan.style.cssText = "margin:0 0 .5rem;font-size:.9em;opacity:.8";
+    scan.textContent = copy.scan;
+    box.appendChild(scan);
+    var svg = typeof pay.qrSvg === "string" ? pay.qrSvg : "";
+    if (svg.indexOf("<svg ") === 0 && svg.indexOf("<script") === -1 && svg.indexOf(" on") === -1) {
+      var qr = document.createElement("div");
+      qr.setAttribute("data-jean-deposit-qr", "");
+      qr.style.cssText = "width:220px;max-width:100%;background:#fff;margin:0 0 .5rem";
+      qr.innerHTML = svg;
+      box.appendChild(qr);
+    }
+    var rows = [
+      [copy.amount, pay.amount],
+      [copy.account, pay.accountDisplay],
+      [copy.iban, pay.ibanDisplay],
+      [copy.symbol, pay.variableSymbol],
+      [copy.message, pay.message],
+    ];
+    for (var i = 0; i < rows.length; i += 1) {
+      if (!rows[i][1]) continue;
+      var line = document.createElement("p");
+      line.style.cssText = "margin:.15rem 0";
+      line.textContent = rows[i][0] + ": " + rows[i][1];
+      box.appendChild(line);
+    }
+    if (pay.dueText) {
+      var due = document.createElement("p");
+      due.style.cssText = "margin:.5rem 0 0;font-size:.9em";
+      due.textContent = copy.due.replace("{due}", pay.dueText);
+      box.appendChild(due);
+    }
+    // One block a form: a second booking replaces the first one's payment —
+    // two symbols on one page would invite paying the wrong one.
+    var previous = form.jeanDepositBox;
+    if (previous && previous.parentNode && previous.parentNode.removeChild) previous.parentNode.removeChild(previous);
+    if (form.parentNode && form.parentNode.insertBefore) form.parentNode.insertBefore(box, form.nextSibling || null);
+    else form.appendChild(box);
+    form.jeanDepositBox = box;
+  }
+
   function fieldValue(form, names) {
     for (var i = 0; i < names.length; i += 1) {
       var el = form.querySelector('[name="' + names[i] + '"]');
@@ -1702,6 +1763,61 @@ function jeanZonedWallClockToUtc(local, timeZone) {
       if (area && area.value.trim()) return area.value.trim();
     }
     return "";
+  }
+
+  // T85 RC-19 — a field the page marked required and the visitor left empty.
+  function missesRequired(form) {
+    var els = form.elements || [];
+    for (var i = 0; i < els.length; i += 1) {
+      var el = els[i];
+      if (!el.required) continue;
+      if (el.type === "radio") {
+        var picked = false;
+        for (var r = 0; r < els.length; r += 1) { if (els[r].name === el.name && els[r].checked) picked = true; }
+        if (!picked) return true;
+      } else if (el.type === "checkbox" ? !el.checked : !String(el.value || "").trim()) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  // T85 RC-19 — an enquiry's fields are its page's: every field the visitor
+  // filled, under the name the page gave it, beside the person's name, address
+  // and text as fieldValue read them. What fieldValue took by its other names,
+  // or by type, is not sent twice.
+  function enquiryFields(form, read) {
+    var fields = {};
+    if (read.name) fields.name = read.name;
+    fields.email = read.email;
+    if (read.message) fields.message = read.message;
+    var names = ["name", "jmeno", "jméno"];
+    var mails = ["email", "e-mail", "mail"];
+    var texts = ["message","zprava","zpráva","text"];
+    var els = form.elements || [];
+    for (var i = 0; i < els.length && Object.keys(fields).length < 40; i += 1) {
+      var el = els[i];
+      var key = el.name;
+      if (!key || key === "_hp") continue;
+      if (["submit", "button", "reset", "file", "password", "hidden", "image"].indexOf(el.type) !== -1) continue;
+      if ((el.type === "checkbox" || el.type === "radio") && !el.checked) continue;
+      var value = el.type === "select-multiple"
+        ? Array.prototype.map.call(el.selectedOptions || [], function (option) { return option.value; }).join(", ")
+        : String(el.value || "").trim();
+      if (!value) continue;
+      if (names.indexOf(key) !== -1 && value === read.name) continue;
+      if ((mails.indexOf(key) !== -1 || el.type === "email") && value === read.email) continue;
+      if ((texts.indexOf(key) !== -1 || el.tagName === "TEXTAREA") && value === read.message) continue;
+      // Boxes under one name are one answer with several parts.
+      if (fields[key] !== undefined) { if (el.type === "checkbox") fields[key] += ", " + value; continue; }
+      fields[key] = value;
+    }
+    // Hygiene H18 HY-80 — where the page says this enquiry came from (the
+    // booking card's „rezervační karta na webu“), sent as the phone line's
+    // stays say theirs. A form without the mark sends what it always sent.
+    var from = form.getAttribute ? form.getAttribute("data-jean-sent") : null;
+    if (from) fields["Přijato"] = String(from).slice(0, 120);
+    return fields;
   }
 
   /**
@@ -1974,7 +2090,10 @@ function jeanZonedWallClockToUtc(local, timeZone) {
           });
           if (result.ok) {
             idemKey = newIdemKey();
-            succeed(form, CFG.copy.successReservation);
+            // T85 RC-13: pending with a payment waits for the deposit.
+            var pay = result.data && result.data.status === "pending" ? result.data.payment : null;
+            if (pay) showDeposit(form, pay);
+            else succeed(form, CFG.copy.successReservation);
           } else {
             // 409 is the one failure a visitor can act on: pick another time.
             say(form, result.status === 409 ? CFG.copy.errorFullyBooked : errorText(result), "error");
@@ -2006,18 +2125,25 @@ function jeanZonedWallClockToUtc(local, timeZone) {
             say(form, errorText(result), "error");
           }
         } else {
-          // contact_form, and only it: the generic forms endpoint is the one
-          // endpoint that takes a form id, and contact_form is the one
-          // capability the platform creates a form for. Anything else routed
-          // here would submit to /forms/undefined/submit (F117).
+          // contact_form and enquiry_form, and only them: the generic forms
+          // endpoint is the one endpoint that takes a form id, and these are the
+          // two capabilities the platform creates a form for. Anything else
+          // routed here would submit to /forms/undefined/submit (F117).
           // (No backticks in this section — see the note on errorText above.)
           var formId = CFG.forms[kind];
           var name = fieldValue(form, ["name", "jmeno", "jméno"]);
           var message = fieldValue(form, ["message","zprava","zpráva","text"]);
           if (kind === "contact_form" && !message) { say(form, CFG.copy.errorRequired, "error"); lock(form, false); return; }
 
+          // T85 RC-19: an enquiry asks what its page asks — every field the
+          // visitor filled goes, under the name the page gave it.
+          var sent = { name: name, email: email, message: message };
+          if (kind === "enquiry_form") {
+            if (missesRequired(form)) { say(form, CFG.copy.errorRequired, "error"); lock(form, false); return; }
+            sent = enquiryFields(form, sent);
+          }
           var payload = {
-            fields: { name: name, email: email, message: message },
+            fields: sent,
             _hp: "",
           };
           // The server reads this key and no other; sending it only when the
@@ -2027,7 +2153,7 @@ function jeanZonedWallClockToUtc(local, timeZone) {
 
           result = await post(CFG.apiUrl + "/v1/public/forms/" + formId + "/submit", payload);
           if (result.ok) {
-            succeed(form, CFG.copy.success);
+            succeed(form, kind === "enquiry_form" ? CFG.copy.successEnquiry : CFG.copy.success);
           } else {
             say(form, errorText(result), "error");
           }
@@ -2603,17 +2729,26 @@ function jeanZonedWallClockToUtc(local, timeZone) {
       // newest-first on every visit (review round 1 of #2712).
       // No prototype: a mode is the page's attribute, and „constructor“ must
       // be a mode like any other, not Object's own (review round 2 of #2712).
+      // T102 ML-3 — a document mount also names WHICH document it shows and
+      // which half of it: one request for each, or the third tab's answer
+      // lands in the first.
       var byMode = Object.create(null);
       var modes = [];
       for (var m = 0; m < nodes.length; m += 1) {
         var asked = nodes[m].getAttribute("data-jean-mode") || "";
-        if (!byMode[asked]) { byMode[asked] = []; modes.push(asked); }
-        byMode[asked].push(nodes[m]);
+        var artifact = nodes[m].getAttribute("data-jean-artifact") || "";
+        var half = nodes[m].getAttribute("data-jean-part") || "";
+        var key = asked + "|" + artifact + "|" + half;
+        if (!byMode[key]) { byMode[key] = { mode: asked, artifact: artifact, part: half, mounts: [] }; modes.push(key); }
+        byMode[key].mounts.push(nodes[m]);
       }
-      modes.forEach(function (mode) {
-        var mounts = byMode[mode];
+      modes.forEach(function (key) {
+        var mode = byMode[key].mode;
+        var mounts = byMode[key].mounts;
         var asks = [];
         if (mode) asks.push("mode=" + encodeURIComponent(mode));
+        if (byMode[key].artifact) asks.push("document=" + encodeURIComponent(byMode[key].artifact));
+        if (byMode[key].part) asks.push("part=" + encodeURIComponent(byMode[key].part));
         // 8z40 PN-8 — this script presses „Souhlasím“, and says so: the
         // endpoint hands the button only to a page that can.
         if (capability === "suggestions") {
