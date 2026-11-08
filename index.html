@@ -2803,5 +2803,268 @@ function jeanZonedWallClockToUtc(local, timeZone) {
 })();
 </script>
 <script>(function(){var n=navigator,d=document,e="https://jeanai.onrender.com/v1/public/sites/71171755-cf11-4977-a074-dacb6a86b118/pv";if(n.webdriver)return;function s(){try{var u=new URL(location.href),q=u.searchParams,k=q.get("k"),b=JSON.stringify({p:u.pathname,k:k});window.fetch?fetch(e,{method:"POST",body:b,keepalive:!0,credentials:"omit"}).catch(Boolean):n.sendBeacon&&n.sendBeacon(e,b);if(k!==null){q.delete("k");history.replaceState(history.state,"",u.pathname+u.search+u.hash)}}catch(x){}}d.prerendering?d.addEventListener("prerenderingchange",s,{once:!0}):s()})()</script>
+<style>#jean-reception{--jr-fill:CanvasText;--jr-on-fill:Canvas;--jr-bg:Canvas;--jr-text:CanvasText;--jr-line:CanvasText;position:fixed;right:16px;bottom:16px;z-index:2147483000;font:inherit;line-height:1.4;max-width:calc(100vw - 32px)}#jean-reception.is-inline{position:static;max-width:none}#jean-reception *{box-sizing:border-box}#jean-reception .jean-reception-launcher{display:inline-flex;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 18px;border:0;border-radius:var(--jean-radius,24px);background:var(--jr-fill);color:var(--jr-on-fill);font:inherit;cursor:pointer;box-shadow:0 6px 24px rgba(0,0,0,.2)}#jean-reception .jean-reception-launcher:focus-visible,#jean-reception button:focus-visible,#jean-reception textarea:focus-visible,#jean-reception a:focus-visible{outline:2px solid currentColor;outline-offset:2px}#jean-reception .jean-reception-label{font-weight:600}#jean-reception .jean-reception-ai{font-size:.8em;opacity:.9}#jean-reception .jean-reception-panel{position:absolute;right:0;bottom:calc(100% + 10px);width:min(360px,calc(100vw - 32px));max-height:min(70vh,560px);display:flex;flex-direction:column;background:var(--jr-bg);color:var(--jr-text);border:1px solid var(--jr-line);border-radius:var(--jean-radius,16px);box-shadow:0 18px 48px rgba(0,0,0,.25);overflow:hidden}#jean-reception.is-inline .jean-reception-panel{position:static;margin-top:10px}#jean-reception .jean-reception-panel[hidden],#jean-reception [hidden]{display:none}#jean-reception .jean-reception-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:12px 14px;background:var(--jr-fill);color:var(--jr-on-fill)}#jean-reception .jean-reception-title{margin:0;font-size:1em;font-weight:600}#jean-reception .jean-reception-head .jean-reception-ai{margin:2px 0 0}#jean-reception .jean-reception-head .jean-reception-privacy{color:inherit;text-decoration:underline;font-size:.8em;opacity:.9}#jean-reception .jean-reception-close{border:0;background:transparent;color:inherit;font:inherit;font-size:1.25em;line-height:1;cursor:pointer;padding:2px 6px}#jean-reception .jean-reception-contacts{margin:0;padding:8px 14px;font-size:.9em;border-bottom:1px solid var(--jr-line)}#jean-reception .jean-reception-contacts a,#jean-reception .jean-reception-handover a{color:inherit;text-decoration:underline}#jean-reception .jean-reception-log{list-style:none;margin:0;padding:12px 14px;overflow-y:auto;flex:1 1 auto;display:flex;flex-direction:column;gap:10px}#jean-reception .jean-reception-turn{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}#jean-reception .jean-reception-turn.is-visitor{align-self:flex-end;max-width:85%;padding:8px 12px;border-radius:12px;background:var(--jr-fill);color:var(--jr-on-fill)}#jean-reception .jean-reception-who{display:block;font-size:.75em;opacity:.8}#jean-reception .jean-reception-status{margin:0;padding:0 14px 6px;font-size:.85em;min-height:1em}#jean-reception .jean-reception-form{display:flex;gap:8px;padding:10px 14px;border-top:1px solid var(--jr-line)}#jean-reception .jean-reception-input{flex:1 1 auto;min-width:0;resize:none;font:inherit;color:inherit;background:transparent;border:1px solid var(--jr-line);border-radius:10px;padding:8px 10px}#jean-reception .jean-reception-send{border:0;border-radius:10px;padding:8px 14px;background:var(--jr-fill);color:var(--jr-on-fill);font:inherit;font-weight:600;cursor:pointer}#jean-reception .jean-reception-handover{margin:0;padding:12px 14px;border-top:1px solid var(--jr-line)}#jean-reception .jean-reception-step{display:inline-block;margin-top:8px;border:1px solid var(--jr-line);border-radius:10px;padding:6px 12px;color:inherit;font-weight:600;text-decoration:none}#jean-reception .jean-reception-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}</style><div id="jean-reception" class="jean-reception" data-jean-capability="site_assistant" lang="cs"><button type="button" class="jean-reception-launcher" aria-expanded="false" aria-controls="jean-reception-panel"><span class="jean-reception-label">Zeptejte se</span><span class="jean-reception-ai">odpovídá AI</span></button><section id="jean-reception-panel" class="jean-reception-panel" role="dialog" aria-labelledby="jean-reception-title" tabindex="-1" hidden><div class="jean-reception-head"><div><h2 id="jean-reception-title" class="jean-reception-title">Zeptejte se</h2><p class="jean-reception-ai">odpovídá AI · <a class="jean-reception-privacy" href="/soukromi.html">Ochrana údajů</a></p></div><button type="button" class="jean-reception-close" aria-label="Zavřít">×</button></div><ol class="jean-reception-log" role="log" aria-live="polite"></ol><p class="jean-reception-status" role="status"></p><form class="jean-reception-form"><label class="jean-reception-sr" for="jean-reception-input">Váš dotaz</label><textarea id="jean-reception-input" class="jean-reception-input" name="message" rows="2" maxlength="600" placeholder="Napište dotaz…" required></textarea><button type="submit" class="jean-reception-send">Odeslat</button></form><p class="jean-reception-handover" hidden>Zkuste to prosím později.</p></section></div><script>(function receptionClient(cfg) {
+  var d = document;
+  var root = d.getElementById("jean-reception");
+  if (!root || root.getAttribute("data-jean-bound")) return;
+  root.setAttribute("data-jean-bound", "1");
+  var place = d.querySelector('[data-jean-capability="site_assistant"]:not(#jean-reception)');
+  if (place) { place.appendChild(root); root.className += " is-inline"; }
+  var q = function (selector) { return root.querySelector(selector); };
+  var launcher = q(".jean-reception-launcher");
+  var panel = q(".jean-reception-panel");
+  var log = q(".jean-reception-log");
+  var form = q(".jean-reception-form");
+  var input = q(".jean-reception-input");
+  var status = q(".jean-reception-status");
+  var handover = q(".jean-reception-handover");
+  var state = { id: null, turns: [] };
+  try {
+    var kept = JSON.parse(window.sessionStorage.getItem(cfg.key) || "null");
+    if (kept && Object.prototype.toString.call(kept.turns) === "[object Array]") state = { id: kept.id || null, turns: kept.turns };
+  } catch (e) { /* storage blocked — the window starts empty */ }
+  function save() {
+    try { window.sessionStorage.setItem(cfg.key, JSON.stringify(state)); } catch (e) { /* nothing kept */ }
+  }
+  function forget() {
+    try { window.sessionStorage.removeItem(cfg.key); } catch (e) { /* nothing kept */ }
+  }
+  function turn(role, text) {
+    var item = d.createElement("li");
+    item.className = "jean-reception-turn is-" + role;
+    var who = d.createElement("span");
+    who.className = "jean-reception-who";
+    who.textContent = role === "visitor" ? cfg.t.you : cfg.t.reception;
+    item.appendChild(who);
+    item.appendChild(d.createTextNode(String(text)));
+    log.appendChild(item);
+    log.scrollTop = log.scrollHeight;
+    return item;
+  }
+  var restoredSteps = [];
+  for (var i = 0; i < state.turns.length; i += 1) {
+    var restored = turn(state.turns[i].role, state.turns[i].text);
+    var kept = state.turns[i].step;
+    if (kept && typeof kept === "object") restoredSteps.push({ item: restored, step: kept });
+  }
+  // A step decides by the page's BOUND form, and the runtime binds the site's
+  // forms once the document is parsed (its DOMContentLoaded, registered before
+  // this one) — so the restored answers get their steps after it.
+  function drawRestoredSteps() {
+    for (var s = 0; s < restoredSteps.length; s += 1) {
+      var kept = restoredSteps[s].step;
+      offer(restoredSteps[s].item, kept.wants, kept.date, kept.party, kept.said);
+    }
+  }
+  if (d.readyState === "loading") d.addEventListener("DOMContentLoaded", drawRestoredSteps);
+  else drawRestoredSteps();
+  // T85 RC-8 — the step is the visitor's: the site's own form, filled with what
+  // they said; their press sends it through the form's own door (its spam
+  // protection, its caps, its notice to the owner). A hand-over waits in this
+  // tab for ten minutes at most, is used once, and never fills a field the
+  // visitor has typed into — a value the page or the runtime set („today“,
+  // one guest) is not theirs, and gives way.
+  d.addEventListener("input", function (event) { if (event.target) event.target.jeanTyped = true; }, true);
+  // The site's own form of this kind on THIS page — the mark on the form or on
+  // a wrapper around it, as the runtime binds it (freeStyleRuntime.js, bindAll);
+  // `bound`: only one the runtime has bound (it sends).
+  // T85 RC-19: the form a left question goes to — the site's enquiry when it can
+  // hold the question (its fields are the owner's) and its script bound it, else
+  // the general form.
+  function writeForm(bound) {
+    var enquiry = formOf("enquiry_form", true);
+    if (enquiry && messageField(enquiry)) return enquiry;
+    return formOf("contact_form", bound);
+  }
+  function messageField(target) {
+    for (var n = 0; n < cfg.fields.message.length; n += 1) {
+      var named = target.querySelector('[name="' + cfg.fields.message[n] + '"]');
+      if (named) return named;
+    }
+    return target.querySelector("textarea");
+  }
+  function formOf(kind, bound) {
+    var marks = d.querySelectorAll('[data-jean-capability="' + kind + '"]');
+    for (var m = 0; m < marks.length; m += 1) {
+      var found = marks[m].tagName === "FORM" ? marks[m] : marks[m].querySelector("form");
+      if (found && (!bound || found.getAttribute("data-jean-bound") === "1")) return found;
+    }
+    return null;
+  }
+  function today() {
+    var now = new Date();
+    var two = function (n) { return (n < 10 ? "0" : "") + n; };
+    return now.getFullYear() + "-" + two(now.getMonth() + 1) + "-" + two(now.getDate());
+  }
+  // A value the form itself would refuse is not put in it: a party past the
+  // field's bounds, a day that has passed or lies outside the field's range.
+  function fits(el, value) {
+    if (el.type === "number") {
+      var n = Number(value);
+      if (isNaN(n) || (el.min !== "" && n < Number(el.min)) || (el.max !== "" && n > Number(el.max))) return false;
+    }
+    if (el.type === "date" && (value < today() || (el.min && value < el.min) || (el.max && value > el.max))) return false;
+    return true;
+  }
+  function fill(target, hand) {
+    // By the names the runtime reads a field by (RUNTIME_FIELD_NAMES).
+    function field(names, fallback) {
+      for (var n = 0; n < names.length; n += 1) {
+        var named = target.querySelector('[name="' + names[n] + '"]');
+        if (named) return named;
+      }
+      return fallback ? target.querySelector(fallback) : null;
+    }
+    function put(el, value) {
+      if (!el || el.jeanTyped || value === null || value === undefined || value === "") return;
+      if (!fits(el, String(value))) return;
+      el.value = String(value);
+    }
+    if (hand.kind === "reservation") {
+      put(field(cfg.fields.date, 'input[type="date"]'), hand.date);
+      put(field(cfg.fields.party, null), hand.party);
+    } else {
+      put(field(cfg.fields.message, "textarea"), hand.message);
+    }
+    var fields = target.querySelectorAll("input[required], textarea[required]");
+    for (var f = 0; f < fields.length; f += 1) { if (!fields[f].value) { fields[f].focus(); break; } }
+  }
+  // A page the step opened: what the press kept, read and removed here.
+  function receive() {
+    var hand = null;
+    try {
+      hand = JSON.parse(window.sessionStorage.getItem(cfg.handKey) || "null");
+      window.sessionStorage.removeItem(cfg.handKey);
+    } catch (e) { hand = null; }
+    if (!hand || typeof hand.at !== "number" || Date.now() - hand.at > 600000) return;
+    var target = hand.kind === "reservation" ? formOf("reservation", false) : writeForm(false);
+    if (target) fill(target, hand);
+  }
+  // The step is a link. To a form on THIS page (`here`) nothing loads: the
+  // form is filled at once and brought into view. To another page the browser
+  // follows it, and the click keeps the hand-over for the page it opens — not
+  // for a click that opens it elsewhere (a new tab or window has a storage of
+  // its own). An e-mail link carries none.
+  function step(item, label, href, hand, here) {
+    var link = d.createElement("a");
+    link.href = here ? "#" : href;
+    link.className = "jean-reception-step";
+    link.textContent = label;
+    if (hand) {
+      link.addEventListener("click", function (event) {
+        var elsewhere = event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey;
+        if (here) {
+          event.preventDefault();
+          if (elsewhere) return;
+          close();
+          // A form in one of the site's windows is shown before it is filled.
+          if (typeof CustomEvent === "function") here.dispatchEvent(new CustomEvent(cfg.showEvent, { bubbles: true }));
+          fill(here, hand);
+          if (here.scrollIntoView) here.scrollIntoView();
+          return;
+        }
+        if (elsewhere) return;
+        hand.at = Date.now();
+        try { window.sessionStorage.setItem(cfg.handKey, JSON.stringify(hand)); } catch (e) { /* the form opens empty */ }
+      });
+    }
+    item.appendChild(link);
+  }
+  // What the visitor wants is the writer's own reading (the door's `wants`);
+  // the step goes to the site's reservation form, else its enquiry form (T85
+  // RC-19), else its contact form, else the business's e-mail — never a step
+  // this site cannot take.
+  function offer(item, wants, date, party, said) {
+    if (wants !== "reservation" && wants !== "message") return;
+    var bookHere = wants === "reservation" ? formOf("reservation", true) : null;
+    if (wants === "reservation" && (bookHere || cfg.bookHref)) {
+      step(item, cfg.t.book, cfg.bookHref, { kind: "reservation", date: date || "", party: party || "" }, bookHere);
+      return;
+    }
+    var writeHere = writeForm(true);
+    if (writeHere || cfg.writeHref) step(item, cfg.t.write, cfg.writeHref, { kind: "message", message: said }, writeHere);
+    else if (cfg.mailHref) step(item, cfg.t.mail, cfg.mailHref, null, null);
+  }
+  // After the runtime's own DOMContentLoaded, as the restored steps: an enquiry form it did not bind cannot send.
+  if (d.readyState === "loading") d.addEventListener("DOMContentLoaded", receive);
+  else receive();
+  function handOver() {
+    form.hidden = true;
+    handover.hidden = false;
+    status.textContent = "";
+  }
+  function open() {
+    panel.hidden = false;
+    launcher.setAttribute("aria-expanded", "true");
+    (form.hidden ? panel : input).focus();
+  }
+  function close() {
+    panel.hidden = true;
+    launcher.setAttribute("aria-expanded", "false");
+    launcher.focus();
+  }
+  launcher.addEventListener("click", function () { if (panel.hidden) open(); else close(); });
+  // A door elsewhere on the page (T104 DL-1) opens this window, as the launcher does.
+  root.addEventListener(cfg.openEvent, function () { if (panel.hidden) open(); });
+  q(".jean-reception-close").addEventListener("click", close);
+  panel.addEventListener("keydown", function (event) { if (event.key === "Escape") close(); });
+  var waiting = false;
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var text = String(input.value || "").trim();
+    if (!text || waiting) return;
+    waiting = true;
+    form.setAttribute("aria-busy", "true");
+    var mine = turn("visitor", text);
+    input.value = "";
+    status.textContent = cfg.t.writing;
+    function giveBack(sentence) {
+      if (mine.parentNode) mine.parentNode.removeChild(mine);
+      input.value = text;
+      status.textContent = sentence;
+    }
+    fetch(cfg.endpoint, {
+      method: "POST",
+      body: JSON.stringify({ message: text, conversationId: state.id }),
+      credentials: "omit",
+    }).then(function (response) {
+      return response.json().then(function (body) { return { ok: response.ok, status: response.status, body: body || {} }; }, function () { return { ok: response.ok, status: response.status, body: {} }; });
+    }).then(function (result) {
+      var body = result.body;
+      if (result.ok && typeof body.answer === "string") {
+        status.textContent = "";
+        state.id = typeof body.conversationId === "string" ? body.conversationId : state.id;
+        var asked = body.wants === "reservation" || body.wants === "message"
+          ? { wants: body.wants, date: body.date || "", party: body.party || "", said: text }
+          : undefined;
+        state.turns.push({ role: "visitor", text: text }, { role: "reception", text: body.answer, step: asked });
+        offer(turn("reception", body.answer), body.wants, body.date, body.party, text);
+        save();
+        return;
+      }
+      if (body.errorCode === "rate_limited") { giveBack(cfg.t.busy); return; }
+      if (body.errorCode === "conversation_full") {
+        state = { id: null, turns: [] };
+        forget();
+        while (log.firstChild) log.removeChild(log.firstChild);
+        giveBack(cfg.t.full);
+        return;
+      }
+      // Only the door's own words hand the visitor over: the reception is
+      // paused, switched off, gone with its plan or its account. Anything else
+      // (a 5xx with no code, a proxy's page) is a failure to retry — and a
+      // hand-over is kept for this page only, never on the device: the next
+      // page asks the door again.
+      if (cfg.handover.indexOf(body.errorCode) < 0) { giveBack(cfg.t.offline); return; }
+      if (mine.parentNode) mine.parentNode.removeChild(mine);
+      handOver();
+    }, function () {
+      giveBack(cfg.t.offline);
+    }).then(function () {
+      waiting = false;
+      form.removeAttribute("aria-busy");
+    });
+  });
+})({"endpoint":"https://jeanai.onrender.com/v1/public/site-chat/71171755-cf11-4977-a074-dacb6a86b118","key":"jean-reception:71171755-cf11-4977-a074-dacb6a86b118","t":{"you":"Vy","reception":"Recepce","writing":"Píše odpověď…","busy":"Chvilku strpení — zkuste to prosím za okamžik znovu.","full":"Tenhle rozhovor skončil. Napište dotaz znovu a začne nový.","offline":"Odpověď se nepodařilo načíst. Zkuste to prosím znovu.","book":"Rezervovat","write":"Napsat zprávu","mail":"Napsat e-mail"},"handover":["reception_paused","function_switched_off","runtime_inactive","site_owner_deleted","site_not_found"],"fields":{"date":["date","datum"],"party":["party","pocet","počet","osoby"],"message":["message","zprava","zpráva","text"]},"bookHref":null,"writeHref":null,"mailHref":null,"handKey":"jean-reception-handover:71171755-cf11-4977-a074-dacb6a86b118","openEvent":"jean-reception-open","showEvent":"jean-window-show"})</script>
 </body>
 </html>
